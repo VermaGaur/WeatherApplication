@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+body{
+    background: linear-gradient(135deg,#033457,#000000);
+
+}
+
+.card{
+    width: 90%;
+    max-width: 470px;
+    background: linear-gradient(135deg,#00feba,#5b548a);
+color:white;
+margin: 100px auto 0;
+border-radius: 20px;
+text-align: center;
+padding: 40px 35px;
+overflow:hidden;
+}
+.search{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.search input{
+    border: none;
+    outline:none;
+    border-radius: 30px;
+    padding: 15px 25px;
+    background: #ebfffc;
+    height: 60px;
+    font-size: 15px;
+    /* The item will take up all the available space in the container, growing or shrinking as needed.
+    If there are multiple flex items with flex: 1, they will share the available space equally. */
+    flex: 1;
+    color: #555;
+    margin-right:16px ;
+    max-width: calc(100% - 60px); /* Avoid overlapping with button */
+
+}
+.btn{
+    border: none;
+    outline: none;
+background:#ebfffc ;
+/* to make the icon cirle border radius 50% with same ht and wdth */
+    border-radius:50%; 
+
+height: 60px;
+width: 60px;
+cursor: pointer;
+flex-shrink: 0; /* Prevent button from shrinking */
+
+
+}
+.btn img{
+    width: 17px;
+}
+.weather-icon{
+    width:170px;
+    margin-top: 30px;
+
+}
+.weather h1{
+    font-size: 80px;
+    font-weight: 500px;
+}
+.weather h2{
+    font-size: 40px;
+    font-weight:lighter;
+    margin-top: -10px;
+
+}
+.details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:0px 20px ;
+    margin-top: 50px;
+
+}
+.col{
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+.col img{
+    width: 50px;
+    margin-right: 15px;
+}
+.humidity , .wind{
+font-size: 28px;
+}
+.weather{
+    display: none;
+}
+.error{
+    width: 50%;
+    padding-top:5px ;
+    text-align: left;
+    margin: 10px 12px;
+    color: #8b0000;
+ display: none;
+}

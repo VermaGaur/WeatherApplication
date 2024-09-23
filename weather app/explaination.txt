@@ -1,0 +1,68 @@
+// used to authenticate your request to the OpenWeatherMap API.
+
+
+
+
+// Another constant apiUrl is defined to store the base URL of the OpenWeatherMap API.
+// It specifies that the query is for the weather in Germany (q=germany).
+// The units are set to metric (units=metric), which means the temperature will be returned in Celsius.
+
+
+
+
+
+// Making the function async allows the use of the await keyword for handling promises.
+
+// Handling promises refers to managing the asynchronous operations in JavaScript, where a promise represents the eventual result (or failure) of an operation that may not be completed immediately, like fetching data from a server. Promises allow us to deal with these operations in a structured and manageable way.
+
+// A Promise Has Three States:
+// Pending: The initial state, where the operation has not yet completed.
+// Fulfilled (Resolved): The operation completed successfully, and the promise returns a value.
+// Rejected: The operation failed, and the promise returns an error.
+// Ways to Handle Promises:
+// Using .then() and .catch()
+
+
+
+
+
+
+
+
+
+// .then(): Used when a promise is fulfilled. It takes a function as an argument, which is executed when the promise resolves.
+// .catch(): Used to handle errors when a promise is rejected
+
+
+
+
+
+
+
+//     The fetch function is used to make an HTTP request to the OpenWeatherMap API.
+// The URL is constructed by appending the apiKey (&appid=${apiKey}) to the apiUrl.
+// The await keyword ensures that the code waits until the fetch request is complete and returns a response.
+
+
+
+
+
+
+
+
+//     The response from the API is received in the form of raw data.
+// The await keyword is used to wait until the .json() method extracts the data in JSON format from the response object.
+// This JSON data is then stored in the data variable.
+
+
+
+
+
+
+
+
+
+
+
+// change the data using queryselector
+// why .name because when we print our data there is key name where vaue is city name
